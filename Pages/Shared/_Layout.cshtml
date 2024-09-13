@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Krocent</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <!-- Bootstrap 5 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-D7q4iqci5cXHhUwI+2fh7vZGF7k+6GnbWojLjOBsDT3n9z+KNUD9dGrkc9J2NV7mP" crossorigin="anonymous">
+    <style>
+        /* Custom blue color scheme */
+        .navbar-custom {
+            background-color: #0056b3; /* Darker blue for navbar */
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #ffffff; /* White text color for brand and links */
+        }
+        .navbar-custom .nav-link:hover {
+            color: #b3d4fc; /* Light blue color on hover */
+        }
+        .footer-custom {
+            background-color: #0056b3; /* Darker blue background for footer */
+            color: #ffffff; /* White text color for footer */
+        }
+        .footer-custom p {
+            margin-bottom: 0; /* Remove bottom margin for footer text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="/">Krocent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/OurTeam">Our Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container my-5">
+        @RenderBody()
+    </main>
+    <footer class="footer-custom py-4">
+        <div class="container text-center">
+            <p> Testimonals</p>
+            <p>© 2024 Krocent. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap 5 JS CDN -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-1pcPHTwtEqfE+rcSc0WyNH0wv9zkbGQwtHkMJf8yNXYqWEKcmT25jWc9S7sIz1QK" crossorigin="anonymous"></script>
+</body>
+</html>
